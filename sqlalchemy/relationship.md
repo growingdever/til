@@ -1,0 +1,1 @@
+relationship에서 `lazy` 옵션의 기본 값은 `select`이다. 이 옵션의 경우 해당 relationship 변수에 접근하자마자 `limit` clause 없이 select 해오는 query를 실행한다. `lazy` 옵션을 `dynamic`으로 둘 경우 `Query` 객체에 index를 붙여서 접근할 때 `limit` clause가 추가된 select query를 실행한다. 
